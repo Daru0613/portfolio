@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------전체 배경화면-------------- */
+body {
+  background-image: url('img/annie-spratt-BcGoZXjyPzA-unsplash.jpg');
+}
+
+/*------------ home 페이지 디자인 ----------------*/
+
+/* 네비게이션 바 스타일 */
+.navbar {
+  position: fixed; /* 상단에 고정 */
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 항목 간 간격 */
+  padding: 10px;
+  z-index: 100;
+}
+
+.nav-item {
+  text-decoration: none; /* 링크 밑줄 제거 */
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: background-color 0.7s;
+}
+
+.nav-item:hover {
+  background-color: #ddd; /* 마우스 올려둘시 색상 변경경 */
+}
+
+/* 메인 섹션 스타일 */
+.main {
+  display: flex;
+  flex-direction: column; /* 세로로 배치 */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* 전체 화면 높이 */
+  padding: 70px 20px 20px; /* 네비게이션 바 공간 확보 */
+  text-align: center;
+}
+
+/* 소개 텍스트 스타일 */
+
+.intro h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #666;
+  line-height: 1.5; /* 줄 간격 */
+}
+
+/* 사진 스타일 */
+.float {
+  bottom: 50px;
+  width: 70%;
+  max-width: 450px; /* 최대 너비 */
+  height: auto; /* 비율 유지 */
+}
+
+.navbar2 {
+  position: fixed; /* 하단에 고정 */
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2px;
+}
+
+.navbar2-item {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: background-color 0.7s;
+}
+
+.navbar2-item:hover {
+  background-color: #ddd;
+}
+
+/*------------ about 페이지 디자인 ---------------*/
+.container {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.about {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 900px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #acabab;
+  border-radius: 20px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.about2 {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 900px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #acabab;
+  border-radius: 20px;
+  text-align: left;
+}
+
+/* ----------------project 페이지 디자인-----------*/
+.project {
+  text-align: center;
+}
+
+.project-content {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  position: relative;
+  display: inline-block;
+  border-radius: 70%;
+}
+
+.project-img {
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.project-item:hover img {
+  filter: brightness(20%);
+}
+
+.project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 중앙 정렬 */
+  color: #fff;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.7); /* 배경 반투명 */
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* 처음엔 숨김 */
+  transition: opacity 0.3s ease-in; /* 부드러운 나타남 */
+  pointer-events: none; /* 텍스트 클릭 방지 */
+}
+
+.project-item:hover .project-text {
+  opacity: 1; /* 호버 시 텍스트 표시 */
+}
+
+.project-information {
+  text-align: center;
+}
+
+/* ------------팀 페이지 디자인-------------- */
+.team {
+  text-align: center;
+}
+
+.team-content {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  position: relative;
+  display: inline-block;
+  border-radius: 70%;
+}
+
+.team-img {
+  border-radius: 30px;
+}
+
+.team-item:hover img {
+  filter: brightness(20%);
+}
+
+.team-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 중앙 정렬 */
+  color: #fff;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.7); /* 배경 반투명 */
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* 처음엔 숨김 */
+  transition: opacity 0.3s ease-in; /* 부드러운 나타남 */
+  pointer-events: none; /* 텍스트 클릭 방지 */
+}
+
+.team-item:hover .team-text {
+  opacity: 1; /* 호버 시 텍스트 표시 */
+}
+
+.team-information {
+  text-align: center;
+}
+
+/* --------------secon 페이지 디자인--------------*/
+
+.seconlogo {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.secon-text {
+  text-align: center;
+}
+
+.secon-textbox {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #acabab;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.secon-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.secon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 */
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 1200px; /* 최대 너비 제한 */
+}
+
+.secon-img {
+  width: 400px; /* 각 이미지 너비 */
+  height: 200px;
+  object-fit: contain; /* 이미지 비율 유지 */
+}
+
+/*----------- 반응형 디자인 ---------------*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; /* 작은 화면에서 줄바꿈 */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-item {
+    font-size: 14px; /* 작은 화면에서 폰트 크기 조정 */
+    padding: 6px 10px;
+  }
+
+  .main {
+    padding: 100px 10px 10px; /* 네비게이션 바 공간 조정 */
+  }
+
+  .float {
+    max-width: 70%; /* 작은 화면에서 사진 크기 조정 */
+  }
+  .container {
+    max-width: 90%; /* 작은 화면에서 너비 조정 */
+    padding: 5px;
+  }
+
+  .about {
+    max-width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 24px; /* 줄 간격 조정 */
+  }
+
+  .about2 {
+    max-width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .secon-textbox {
+    max-width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .secon-img {
+    width: 90%; /* 모바일에서 이미지 너비 */
+    max-width: 400px;
+  }
+
+  .secon-icon img {
+    max-width: 150px; /* 모바일에서 아이콘 크기 축소 */
+  }
+}
